@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loop Racing</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #cddfb0;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      }
+      .shell {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+      }
+      #gameCanvas {
+        width: min(96vw, 1200px);
+        height: min(96vh, 760px);
+        border: 2px solid #253018;
+        border-radius: 8px;
+        background: #7ea86c;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <canvas id="gameCanvas" width="1200" height="760"></canvas>
+    </div>
+    <script src="./game.js"></script>
+  </body>
+</html>
